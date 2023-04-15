@@ -1,0 +1,7 @@
+function calculate(expression) {
+  const fn = new Function('return ' + expression);
+  return fn();
+}
+
+let result = calculate('2+2*5'); // 12
+console.log(result);
